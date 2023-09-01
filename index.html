@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Text - Encryptor</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/assets/Logo-verde-LeonCrypt.svg" alt="logo LeonCrypt">
+        <h1 class="title">Text Encryptor</h1>
+    </header>
+
+    <main>
+        <section class="section-encrypt">
+            <textarea class="text-area" cols="30" rows="10" placeholder="Enter the text here"></textarea>
+            <div class="information-container">
+                <img class="i-exclamation" src="/assets/i_exclamation.svg"></img>
+                <h6 class="information">Only lowercase letters and no accents</h6>
+            </div>
+            <div class="buttons">
+                <button class="btn-encrypt" onclick="btnEncrypt()"> Encrypt </button>
+                <button class="btn-decrypt" onclick="btnDecrypt()"> Decrypt </button>
+            </div>
+        </section>
+        <section class="section-traduction">
+            <textarea class="message" cols="30" rows="10"></textarea>
+            <div class="contain-error">
+                <h5>No message was find!</h5>
+                <h6 class="descrip_msg">Enter the text you want to encrypt or decrypt.</h6>
+            </div>
+            <button class="copy" onclick="btnCopy()">Copy</button>
+        </section>
+    </main>
+<script src="/scripts.js"></script>
+</body>
+</html>

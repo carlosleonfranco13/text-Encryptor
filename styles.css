@@ -1,0 +1,246 @@
+* {
+    border: none;
+    box-sizing: border-box;
+    background-color: #1A1A1A;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+body {
+    max-width: 1024px;
+    padding: 1.6rem .8rem;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: left;
+    gap: .8rem;
+    /*flex-wrap: wrap;*/
+}
+
+main {
+    display: flex;
+    gap: .8rem;
+}
+
+.title {
+    font-family: 'Press Start 2P';
+    font-size: 1.8rem;
+    color: #42FF00;
+    margin-left: 0;
+}
+
+.text-area {
+    background-color: #333;
+    border: 2px solid #42FF00;
+    border-radius: .4rem;
+    margin-top: .8rem;
+    padding: .8rem;
+    font-family: 'Press Start 2P';
+    font-size: .6rem;
+    color: white;
+    line-height: 1.2rem;
+    resize: none;
+    width: 100%;
+}
+
+.i-exclamation {
+    height: .8rem;
+}
+
+.information-container {
+    display: flex;
+    gap: .4rem;
+    align-items: center;
+    height: 1.5rem;
+}
+
+.icon-inform { 
+    font-size: .8rem;
+    color: black;
+}
+h6 {
+    font-style: italic;
+    color: white;
+    font-family: 'Lexend Zetta';
+    font-size: .4rem;
+}
+
+button {
+    border-radius: .3rem;
+    font-family: 'Press Start 2P';
+    font-size: 1rem;
+    padding: .8rem 2rem;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.btn-encrypt {
+    background-color: #42FF00;
+}
+.btn-encrypt:hover {
+    transition: all .1s;
+    scale: 1.03;
+    cursor: pointer;
+}
+.btn-encrypt:active {
+    animation:scale-up-center 0.5s; 
+} @keyframes scale-up-center {
+    0%{
+        transform:scale(.95)
+    } 
+    100%{
+        transform:scale(1)
+    } 
+}
+
+.btn-decrypt {
+    background-color: #333;
+    color: #42FF00;
+    border: .05rem solid #42FF00;
+}
+.btn-decrypt:hover {
+    transition: all .1s;
+    scale: 1.03;
+    cursor: pointer;
+}
+.btn-decrypt:active {
+    animation:scale-up-center 0.5s; 
+} @keyframes scale-up-center {
+    0%{
+        transform:scale(.95)
+    } 
+    100%{
+        transform:scale(1)
+    } 
+}
+
+.message {
+    position: relative;
+    top: 0;
+    border-radius: .4rem;
+    padding: .8rem;
+    font-family: 'Press Start 2P';
+    font-size: .8rem;
+    color: white;
+    line-height: 1.2rem;
+    background-image: url(/assets/noFind.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    resize: none;
+    width: 100%;
+    height: 10rem;
+    background-size: 60%;
+    background-color: #333;
+    outline: none;
+}
+
+.copy {
+    background-color: white;
+    color: #333;
+    border: .05rem solid white;
+    cursor: pointer;
+    padding: .4rem;
+    margin: 0 0.4rem 0.4rem;
+}
+.copy:hover {
+    transition: all .1s;
+    scale: 1.03;
+}
+.copy:active {
+    animation:scale-up-center 0.5s; 
+} @keyframes scale-up-center {
+    0%{
+        transform:scale(.95)
+    } 
+    100%{
+        transform:scale(1)
+    }
+}
+
+.img-msg-noFind {
+    width: 8rem;
+}
+
+.section-encrypt {
+    width: 60%;
+}
+.section-traduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+
+    background-color: #333;
+    border: 2px solid #42FF00;
+    border-radius: .4rem;
+    margin-top: .8rem;
+}
+
+h5 {
+    font-family: 'Press Start 2P';
+    font-size: .8rem;
+    color: #42FF00;
+    text-align: center;
+    background-color: #333;
+}
+
+.descrip_msg {
+    background-color: #333;
+    text-align: center;
+    font-size: .6rem;
+}
+
+.contain-error {
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+.title {
+    font-size: 1.2rem;
+}
+
+    main {
+        flex-direction: column;
+    }
+
+    .section-encrypt {
+        width: 100%;
+    }
+
+    .section-traduction {
+        width: 100%;
+        height: 11rem;
+    }
+    
+    .message {
+        background-size: contain;
+    }
+
+    .copy:hover {
+        scale: 1.02;
+    }
+
+    button {
+        padding: .4rem .4rem;
+        font-size: .7rem;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .title {
+        font-size: .9rem;
+    }
+    .information {
+        font-size: .5rem;
+    }
+    button {
+        padding: .4rem .4rem;
+        font-size: .7rem;
+    }
+}
