@@ -33,7 +33,8 @@ main {
 }
 
 .logo {
-    height: 2.6rem;
+    height: 2rem;
+    align-self: center;
 }
 
 .text-area {
