@@ -27,9 +27,13 @@ main {
 
 .title {
     font-family: 'Press Start 2P';
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #42FF00;
     margin-left: 0;
+}
+
+.logo {
+    height: 2.6rem;
 }
 
 .text-area {
@@ -201,7 +205,7 @@ h5 {
 
 @media (max-width: 768px) {
 .title {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
     main {
@@ -234,7 +238,7 @@ h5 {
 
 @media (max-width: 320px) {
     .title {
-        font-size: .9rem;
+        font-size: .8rem;
     }
     .information {
         font-size: .5rem;
